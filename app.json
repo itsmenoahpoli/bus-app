@@ -1,0 +1,34 @@
+{
+  "expo": {
+    "name": "CUL Bus Transport",
+    "slug": "cul-bus-transport",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/cul-transport-logo-home.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.itsmenoahpoli.culbustransport"
+    },
+    "web": {
+      "favicon": "./assets/images/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "83a16f23-b9c9-497e-9659-67f25ce9dac9"
+      }
+    }
+  }
+}
