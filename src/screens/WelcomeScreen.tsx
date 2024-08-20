@@ -3,7 +3,6 @@ import { SafeAreaProvider, useSafeAreaInsets } from "react-native-safe-area-cont
 import { StackNavigationProp } from "@react-navigation/stack";
 import { View, Text, Pressable, Image } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
-import { ImageAssets } from "@/assets/index";
 import type { StackParamsList } from "@/types/navigation";
 
 type Props = {
@@ -28,12 +27,7 @@ export const WelcomeScreen: React.FC<Props> = (props) => {
         colors={["#f7de63", "#dbbd25"]}
         style={{ paddingBottom: insets.bottom }}
       >
-        <Image
-          source={ImageAssets.brandLogo}
-          resizeMethod="scale"
-          resizeMode="contain"
-          className="h-48 w-h-48"
-        />
+        <Text className="text-2xl font-bold">PBAR</Text>
 
         <View className="w-full flex flex-col gap-y-3 px-5 mb-8">
           <Pressable
