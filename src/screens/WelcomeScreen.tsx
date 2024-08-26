@@ -27,7 +27,7 @@ export const WelcomeScreen: React.FC<Props> = (props) => {
         colors={["#f7de63", "#dbbd25"]}
         style={{ paddingBottom: insets.bottom }}
       >
-        <Text className="text-2xl font-bold">PBAR</Text>
+        <Text className="text-2xl font-bold">PBAR Bus Booking App</Text>
 
         <View className="w-full flex flex-col gap-y-3 px-5 mb-8">
           <Pressable

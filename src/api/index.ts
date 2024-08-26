@@ -7,14 +7,8 @@ import axios, {
 import { Toast } from "react-native-toast-alert";
 import { useAuthStore } from "@/store";
 
-const baseURLS = {
-  prod: "https://cul-transport-server-production.up.railway.app/api/v1",
-  local: "http://localhost:3000/api/v1",
-};
-
 const instance: AxiosInstance = axios.create({
-  // @ts-ignore
-  baseURL: baseURLS["prod"],
+  baseURL: "http://localhost:3000/api/v1",
 });
 
 instance.interceptors.request.use(

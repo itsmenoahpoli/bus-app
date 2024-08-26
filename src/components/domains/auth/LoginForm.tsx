@@ -11,12 +11,7 @@ export const LoginForm: React.FC = () => {
     control,
     handleSubmit,
     formState: { errors },
-  } = useForm({
-    defaultValues: {
-      email: "primokael@domain.com",
-      password: "policarpio",
-    },
-  });
+  } = useForm({});
   const { navigate } = useNavigation();
 
   const [loading, setLoading] = React.useState<boolean>(false);
@@ -25,12 +20,13 @@ export const LoginForm: React.FC = () => {
   const handleLogin = handleSubmit(async (formData) => {
     setLoading(true);
 
+    // @ts-ignore
     return AuthService.loginAccount(formData, setLoading);
   });
 
-  const handleToggleCheckbox = () => {
-    setChecked((prevState) => !prevState);
-  };
+  // const handleToggleCheckbox = () => {
+  //   setChecked((prevState) => !prevState);
+  // };
 
   const goToRequestOtp = () => {
     // @ts-ignore
